@@ -69,3 +69,18 @@ h4,
     line-height: 24px;
   }
 }
+
+h5,
+.h5 {
+  font-size: 15px;
+  line-height: 15px;
+
+  @media (min-width: 992px) {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,105 @@
+.schedule {
+  position: relative;
+
+  &::before {
+    @media (min-width: 1200px) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 329px;
+      height: 511px;
+      background: url("/outer/images/bg-demo.png") no-repeat center;
+      background-size: contain;
+
+      content: '';
+    }
+  }
+
+  .h2 {
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      margin-bottom: 60px;
+    }
+    @media (min-width: 1200px) {
+      margin-bottom: 80px;
+    }
+
+    & + a {
+      color: #464646;
+      font-size: 18px;
+      text-decoration: underline;
+      display: inline-block;
+      margin-bottom: 80px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .tab-content {
+    margin-top: 50px;
+  }
+
+  .nav-tabs .nav-link.red,
+  .nav-tabs .nav-link.red.active {
+    color: #ed1c24;
+  }
+
+  .nav-tabs .nav-link.red.active,
+  .nav-tabs .nav-link.red:hover {
+    border-color: transparent transparent #ed1c24;
+  }
+
+  .nav-tabs .nav-link.blue,
+  .nav-tabs .nav-link.blue.active {
+    color: #1c3aed;
+  }
+
+  .nav-tabs .nav-link.blue.active,
+  .nav-tabs .nav-link.blue:hover {
+    border-color: transparent transparent #1c3aed;
+  }
+
+  .nav-tabs .nav-link {
+    color: #464646;
+    font-weight: 600;
+  }
+
+  .nav-tabs .nav-link.active {
+    border-color: transparent transparent #464646;
+  }
+
+  .nav-tabs .nav-link:hover,
+  .nav-tabs .nav-link:focus {
+    border-color: transparent transparent #464646;
+  }
+
+  .media {
+    margin-bottom: 25px;
+    padding: 25px 30px 35px;
+    box-shadow: 0 0 46px rgba(35, 31, 32, 0.11);
+
+    @media (max-width: 767.98px) {
+      padding: 25px 10px 35px;
+    }
+
+    .time {
+      color: #ed1c24;
+    }
+
+    .h5, .h3 {
+      margin-bottom: 12px;
+    }
+
+    .large {
+      &.last {
+        margin-top: 26px;
+        line-height: 26px;
+        font-family: $font-family-openSans;
+      }
+    }
+  }
+}
