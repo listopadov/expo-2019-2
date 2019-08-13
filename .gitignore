@@ -1,5 +1,6 @@
 .idea
-outer
+outer/css
+outer/js
 package-lock.json
 
 # Logs
