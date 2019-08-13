@@ -1,0 +1,33 @@
+@import '../../variables';
+
+/* LINK
+----------------------------------------- */
+a {
+  color: $guide-color6;
+  outline: 0;
+  outline-color: transparent !important;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: color $transitionDelay1 linear;
+
+  &:hover,
+  &:active {
+    color: $guide-color6;
+    outline: 0;
+    text-decoration: none;
+  }
+
+  &.link-dark {
+    color: $guide-color2;
+
+    &:focus {
+      color: $guide-color2;
+    }
+
+    &:hover,
+    &:active {
+      color: $guide-color6;
+    }
+  }
+}

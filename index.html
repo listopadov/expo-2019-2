@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expo 2019</title>
+</head>
+<body>
+
+<section class="about text-center">
+    <div class="container">
+        <h2 class="h2">О МЕРОПРИЯТИИ</h2>
+
+        <p class="large">MUK EXPO ежегодно собирает свыше 1 500 украинских и зарубежных ИТ-профессионалов. Свои решения
+            представляют более 40 компаний-участниц — лидеров рынка информационных технологий.</p>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="image-wrapper">
+                    <img src="/outer/images/about/icon-1.png" alt="about image">
+                </div>
+
+                <p>Выставка и демонстрация оборудования, продуктов и технологических решений</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="image-wrapper">
+                    <img src="/outer/images/about/icon-2.png" alt="about image">
+                </div>
+
+                <p>Новые продукты <br> и решения в <br class="d-none d-lg-block"> портфеле МУК</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="image-wrapper">
+                    <img src="/outer/images/about/icon-3.png" alt="about image">
+                </div>
+
+                <p>Демонстрации и <br> доклады для <br class="d-none d-lg-block"> IT – профессионалов</p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="image-wrapper">
+                    <img src="/outer/images/about/icon-4.png" alt="about image">
+                </div>
+
+                <p>Обмен опытом, <br class="d-none d-lg-block"> общение с коллегами в <br class="d-none d-lg-block">
+                    профессиональном кругу</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="registration">
+    <div class="top-shadow"></div>
+    <div class="bottom-shadow"></div>
+
+    <div class="container">
+        <h2 class="h2">РЕГИСТРАЦИЯ</h2>
+
+        <form class="form"
+              action="register.php"
+              data-form="register"
+              method="POST">
+            <div class="row">
+                <div class="form-wrap col-lg-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <label for="firstName">Имя</label>
+                            <input id="firstName"
+                                   type="text"
+                                   class="form-control"
+                                   name="name" required>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <label for="secondName">Фамилия</label>
+                            <input id="secondName"
+                                   type="text"
+                                   name="sc-name"
+                                   class="form-control" required>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <label for="company">Компания</label>
+                            <input id="company"
+                                   type="text"
+                                   name="company"
+                                   class="form-control" required>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <label for="position">Должность</label>
+                            <input id="position"
+                                   type="text"
+                                   name="position"
+                                   class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-wrap col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4 transport-wrap">
+                            <label for="city">Город</label>
+                            <input id="city"
+                                   type="text" name="city"
+                                   class="form-control" required>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="email">Email</label>
+                            <input id="email"
+                                   type="email" name="e-mail"
+                                   class="form-control" required="">
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="phone">Телефон</label>
+                            <input id="phone"
+                                   type="tel"
+                                   name="tel" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="category">
+                        <span class="category_ttl font-weight-bold">Кем вы являетесь:</span>
+
+                        <div class="category-checkbox">
+                            <input id="check1" type="radio" name="radio" value="vendor" class="radio" checked>
+                            <label for="check1">Вендор</label>
+                        </div>
+                        <div class="category-checkbox">
+                            <input id="check2" type="radio" name="radio" value="itcompany" class="radio">
+                            <label for="check2">ИТ-компания (реселлер/интегратор/сервис-провайдер)</label>
+                        </div>
+                        <div class="category-checkbox">
+                            <input id="check3" type="radio" name="radio" value="user" class="radio">
+                            <label for="check3">Конечный пользователь (корпоративный заказчик/оператор связи/малый и
+                                средний бизнес)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 text-center">
+                    <button title="РЕГИСТРАЦИЯ" name="btn_submit" class="btn btn-form-submit" type="submit">
+                        РЕГИСТРАЦИЯ
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="schedule">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="h2">РАСПИСАНИЕ</h2>
+
+                <a href="#" title="Скачать PDF" download>Скачать PDF</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="expo text-center">
+    <div class="overlay"></div>
+    <div class="container">
+        <h2 class="h2">ЭКСПОЗИЦИЯ</h2>
+
+        <div class="map-expo__pic">
+            <img src="/outer/images/expo/expo.png" alt="map expo">
+        </div>
+    </div>
+</section>
+
+<section class="faq text-center text-white">
+    <div class="faq-bg-a"></div>
+    <div class="faq-bg-b"></div>
+    <div class="faq-bg-c"></div>
+
+    <div class="container">
+        <h2 class="h2">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+
+        <div class="accordion">
+            <div class="accordion-item active">
+                <div class="accordion-header">
+                    <div class="icon"></div>
+
+                    <h4 class="h4">Дата проведения</h4>
+                </div>
+                <div class="accordion-body">
+                    <p>28 сентября 2017 года. Выставка работает с 9:00 до 18:00</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="icon"></div>
+
+                    <h4 class="h4">Адрес</h4>
+                </div>
+                <div class="accordion-body">
+                    <p>Павильон выставочного центра АККО Интернешнл. Киев, проспект Победы, 40-Б</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="icon"></div>
+
+                    <h4 class="h4">Как к нам доехать?</h4>
+                </div>
+                <div class="accordion-body">
+                    <p>
+                        От станции метро «Политехнический институт»: с противоположной стороны проспекта Победы сесть в
+                        любое маршрутное такси и проехать до остановки «Парк Пушкина». Затем следует пройти вглубь парка
+                        по главной аллее непосредственно до выставочного павильона.
+                    </p>
+
+                    <p>
+                        От станции метро «Шулявская»: одна остановка на любом маршрутном такси по проспекту Победы в
+                        сторону центра до остановки «Парк Пушкина». Затем следует пройти вглубь парка по главной аллее
+                        непосредственно до выставочного павильона.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-modal font-weight-bold"
+                title="ЗАДАТЬ ВОПРОС" type="button">ЗАДАТЬ ВОПРОС
+        </button>
+    </div>
+</section>
+
+<section class="partners text-center">
+    <div class="container">
+        <h2 class="h2">НАШИ ПАРТНЕРЫ</h2>
+
+        <ul class="list-images">
+            <li><img src="/outer/images/logo/logo-1.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-2.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-4.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-1.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-2.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-4.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+
+            <li><img src="/outer/images/logo/logo-1.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-2.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-4.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-1.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-2.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-4.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-4.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-1.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-2.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-4.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-4.jpg" alt="logo image"></li>
+            <li><img src="/outer/images/logo/logo-3.jpg" alt="logo image"></li>
+        </ul>
+    </div>
+</section>
+
+<div class="map"></div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-6 col-lg-2">
+                <div class="logo">
+                    <img src="/outer/images/logo-2.png" alt="logo Expo">
+                </div>
+            </div>
+            <div class="col-6 col-lg-1 order-lg-2">
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/MUKGROUP/"><img src="/outer/images/fb.png" alt="facebook icon"></a></li>
+                    <li><a href="https://www.youtube.com/user/MediaMuk"><img src="/outer/images/yt.png" alt="youtube icon"></a></li>
+                    <li><a href="https://www.linkedin.com/company/muk/"><img src="/outer/images/in.png" alt="linkedin icon"></a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-9 p-lg-0">
+                <nav>
+                    <ul>
+                        <li><a href="#" title="О ВЫСТАВКЕ">О ВЫСТАВКЕ</a></li>
+                        <li><a href="#" title="РЕГИСТРАЦИЯ">РЕГИСТРАЦИЯ</a></li>
+                        <li><a href="#" title="ДОКЛАДЫ">ДОКЛАДЫ</a></li>
+                        <li><a href="#" title="ДЕМОНСТРАЦИИ">ДЕМОНСТРАЦИИ</a></li>
+                        <li><a href="#" title="ЭКСПОЗИЦИЯ">ЭКСПОЗИЦИЯ</a></li>
+                        <li><a href="#" title="ПАРТНЕРЫ">ПАРТНЕРЫ</a></li>
+                        <li><a href="#" title="МЕСТО ПРОВЕДЕНИЯ">МЕСТО ПРОВЕДЕНИЯ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<noscript id="deferred-styles">
+    <link rel="stylesheet" href="outer/css/styles.css">
+</noscript>
+
+<script>
+  var loadDeferredStyles = function () {
+    var addStylesNode = document.getElementById("deferred-styles");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement);
+    addStylesNode.parentElement.removeChild(addStylesNode);
+  };
+  var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+    window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+  if (raf) raf(function () {
+    window.setTimeout(loadDeferredStyles, 0);
+  });
+  else window.addEventListener('load', loadDeferredStyles);
+</script>
+
+<script src="outer/js/commons.js"></script>
+
+<script>
+  var modernBrowser = ('fetch' in window && 'assign' in Object);
+
+  if (!modernBrowser) {
+    var scriptElement = document.createElement('script');
+
+    scriptElement.async = false;
+    scriptElement.src = '<?= $polyfillsJsUrl ?>';
+    document.body.appendChild(scriptElement);
+  }
+</script>
+
+<script src="outer/js/main.js"></script>
+</body>
+</html>

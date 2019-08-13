@@ -1,0 +1,24 @@
+@import '../../variables';
+
+/* IMAGE
+----------------------------------------- */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg path {
+  transition: fill $transitionDelay2 linear;
+}
+
+.lazyIMGLoading {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.background-image-none {
+  background-image: none !important;
+}

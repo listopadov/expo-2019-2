@@ -1,0 +1,36 @@
+@mixin easeTransition($propery, $duration, $delay) {
+  transition: $propery $duration ease-in-out $delay;
+}
+
+@mixin backgroundColorHexToRbga($hexToRbgaColor,$opacity) {
+  background-color: rgba(red($hexToRbgaColor), green($hexToRbgaColor), blue($hexToRbgaColor), $opacity);
+}
+
+@mixin gradient-custom-two-colors($deg: 145deg, $start-color: #00b3ee, $start-percent: 0%, $end-color: #c3325f, $end-percent: 100%) {
+  background-image: linear-gradient($deg, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1);
+}
+
+@mixin gradient-custom-three-colors($deg: 145deg, $start-color: #00b3ee, $start-percent: 0%, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f, $end-percent: 100%) {
+  background-image: linear-gradient($deg, $start-color $start-percent, $mid-color $color-stop, $end-color $end-percent);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1);
+}
+
+
+@mixin placeholder() {
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
+}
+

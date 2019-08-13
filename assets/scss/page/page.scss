@@ -1,0 +1,23 @@
+@import "about";
+@import "registration";
+@import "schedule";
+@import "expo";
+@import "faq";
+@import "partners";
+@import "footer";
+
+.map {
+  position: relative;
+  height: 510px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: url("/outer/images/map.jpg") no-repeat center;
+    background-size: cover;
+  }
+}

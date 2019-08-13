@@ -1,0 +1,50 @@
+.expo {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    background: url("/outer/images/expo/bg-2.jpg") no-repeat center;
+    background-size: cover;
+
+    content: '';
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(53, 53, 53, 0.74);
+    z-index: 1;
+  }
+
+  .h2 {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
+    color: $guide-color;
+    z-index: 1;
+
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      margin-bottom: 60px;
+    }
+    @media (min-width: 1200px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  .map-expo__pic {
+    position: relative;
+    z-index: 1;
+    img {
+      margin: auto;
+    }
+  }
+}

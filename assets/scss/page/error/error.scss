@@ -1,0 +1,77 @@
+@import "../../variables";
+
+html {
+  height: 100%;
+}
+
+.inner-error {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+
+  .wrapper-error-page {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+
+    min-height: 100%;
+
+    text-align: center;
+
+    @media (max-width: 991.98px) {
+      background-color: $error-bg;
+    }
+    @media (min-width: 992px) {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4NjUiIGhlaWdodD0iNzY4IiB2aWV3Qm94PSIwIDAgODY1IDc2OCI+ICAgIDxwYXRoIGZpbGw9IiNFNkZBRTciIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTEwNDIuNTIgNTQ1LjAyNmMtNi4xMDMtMzUuNzcyLTM1LjI5LTgwLjQ3OS04MS43NC0xMDcuOTQ0LTQ2LjQ1Mi0yNy40NjUtODAuNzQ1LTIwLjQzNi04MC4yMDUtMjIuMDAyIDIwLjczOC00Ny41MzggMzEuNjE3LTE0NS44NDEgMjguMjA2LTIxMC40MkM5MDUuMzcxIDE0MC4wOCA5MTcuOTE2LS40OTQgODY1LTIzLjgzMmMtMjIuMjYyLTcuMTQyLTE3MS40NTUtOS4wODUtMjI0LjY2NSAwLTUzLjIxIDkuMDg1LTgyLjE1My0xLjc4OC0xODYuNzgxIDYwLjIyNUMzNDguOTI2IDk4LjQwNSAzMTguMDIgMTc0Ljg1OSAyOTEuMjUgMjE4LjE4OWMtMTEuNzg2IDIwLjQ2NC0xOC43NTcgMzMuODI4LTE4Ljc1NyAzMy44MjgtNC4zMzEuMjI1LTEwLjAxMy05LjEwNS00MC40NTEtMjQuMzUtNDMuODQtMjEuOTU1LTk5LjcyMy03Ljk3LTEyMS43MzEtLjA2LTM5LjUyIDQ1Ljk0Ny00OC41MTggMTI3LjAyLTIxLjg1OCAyMDEuMDA5IDIzIDYzLjk3IDUwLjg1NCAxMTMuODQ3IDUwLjg1NCAxMTMuODQ3LTQyLjQ3OC01LjI2Ni0xMTIuODc4IDUuOC0xMjguMjc2IDM2Ljg0OC00MC4yMjYgODEuMTEzIDQ1LjIwOCAyMTguMTA1IDEwMS45MTcgMjYzLjA0IDU2LjIxMyA0NC41NDEgMTAzLjAxIDIxLjIxOCAxNDIuMzI1IDYzLjA2NCA1NS42NTUgODIuNTIyIDY3Ny42OCAzNC45MSA2OTguNjktNzIuNjc5IDEwLjg3Ni01NS42OTctMzguMjU3LTYwLjEwOS00MC4xNjUtNjYuMjEyIDAgMCAxNy4yNDgtMS4wMDggNTkuOTY2LTM2LjU1IDcyLjU0LTYwLjM1NSA3NC45NjQtMTQ4LjU2NSA2OC43NTYtMTg0Ljk0OHoiLz48L3N2Zz4=);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      background-size: contain;
+    }
+
+    .error-page {
+      margin: auto;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+
+      height: 100%;
+    }
+  }
+
+  h1 {
+    margin-bottom: 15px;
+  }
+}
+
+.error-page__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-page__wrap-img {
+  margin-bottom: 35px;
+
+  svg {
+    width: 100%;
+    max-width: 270px;
+  }
+}
+
+.error-page__text {
+  margin-bottom: 15px;
+
+  a {
+    color: $error-link-clr;
+    text-decoration: underline;
+
+    &:hover,
+    &:active {
+      color: $error-link-hv-clr;
+      text-decoration: none;
+    }
+  }
+}
