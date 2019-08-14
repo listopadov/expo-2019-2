@@ -90,7 +90,7 @@
         @media (min-width: 1200px) {
           height: 110px;
         }
-        
+
         &:hover {
           background-color: #f2f2f2;
         }
@@ -160,7 +160,7 @@
   .keks {
     list-style: none;
     padding: 0;
-    margin: 30px 0 0 ;
+    margin: 30px 0 0;
     display: flex;
     flex-wrap: wrap;
     max-width: 550px;
@@ -185,8 +185,6 @@
     border-radius: 0;
     margin-top: 60px;
 
-
-
     &:hover {
       opacity: 0.8;
     }
@@ -195,6 +193,52 @@
   .shmeks {
     @media (min-width: 992px) {
       margin-top: 100px;
+    }
+  }
+
+  .lang-wrap {
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+
+    &:hover {
+      .lang-item {
+        display: block;
+      }
+    }
+
+    span {
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      height: 40px;
+      width: 40px;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+      line-height: 40px;
+      box-sizing: content-box;
+    }
+  }
+
+  .lang-item {
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+
+    li {
+      cursor: pointer;
+
+    }
+
+    li + li {
+      margin-top: 10px;
     }
   }
 }

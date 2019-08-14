@@ -2,7 +2,8 @@
   "name": "assets_webpack",
   "version": "0.0.1",
   "scripts": {
-    "expo_bd": "webpack --config ./assets/webpack.dev.js"
+    "expo_bd": "webpack --config ./assets/webpack.dev.js",
+    "expo_bp": "webpack --config ./assets/webpack.prod.js"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
@@ -21,6 +22,7 @@
     "style-loader": "^0.19.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@types/chai": "^4.1.7",
     "@types/dinero.js": "^1.4.1",
     "@types/mocha": "^5.2.6",

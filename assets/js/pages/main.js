@@ -3,6 +3,8 @@ import '../../scss/theme.scss';
 import "../../../node_modules/bootstrap/js/src/tab";
 import "../../../node_modules/bootstrap/js/dist/collapse";
 
+import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
+
 (() => {
   "use strict";
 
