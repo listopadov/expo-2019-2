@@ -33,32 +33,33 @@
         <nav class="navbar navbar-expand-xl navbar-light">
             <span class="navbar-brand"><img src="/outer/images/logo-1.png" alt="logo Expo"></span>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="О ВЫСТАВКЕ">О ВЫСТАВКЕ</a>
+                        <a class="nav-link link-anchor" href="#" data-anchor-scroll="#about" title="О ВЫСТАВКЕ">О ВЫСТАВКЕ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="РЕГИСТРАЦИЯ">РЕГИСТРАЦИЯ</a>
+                        <a class="nav-link link-anchor" href="#" data-anchor-scroll="#registration" title="РЕГИСТРАЦИЯ">РЕГИСТРАЦИЯ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="ДОКЛАДЫ">ДОКЛАДЫ</a>
+                        <a class="nav-link link-anchor" href="#" data-anchor-scroll="#schedule" title="ДОКЛАДЫ/ДЕМОНСТРАЦИИ">ДОКЛАДЫ/ДЕМОНСТРАЦИИ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="ДЕМОНСТРАЦИИ">ДЕМОНСТРАЦИИ</a>
+                        <a class="nav-link link-anchor" href="#" data-anchor-scroll="#expo" title="ЭКСПОЗИЦИЯ">ЭКСПОЗИЦИЯ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="ЭКСПОЗИЦИЯ">ЭКСПОЗИЦИЯ</a>
+                        <a class="nav-link link-anchor" href="#" data-anchor-scroll="#partners" title="ПАРТНЕРЫ">ПАРТНЕРЫ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="ПАРТНЕРЫ">ПАРТНЕРЫ</a>
+                        <a class="nav-link link-anchor" href="#" data-anchor-scroll="#map" title="МЕСТО ПРОВЕДЕНИЯ">МЕСТО ПРОВЕДЕНИЯ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" title="МЕСТО ПРОВЕДЕНИЯ">МЕСТО ПРОВЕДЕНИЯ</a>
+                        <a class="nav-link" href="/muk_security_hub/" title="MUK SECURITY HUB">MUK SECURITY HUB</a>
                     </li>
                 </ul>
             </div>
@@ -66,29 +67,29 @@
 
         <div class="row text-white">
             <div class="col-12 col-lg-6">
-                <h1 class="h1">Ежегодная IT выставка <br> MUK EXPO 2019</h1>
+                <h1 class="h1">MUK EXPO 2019</h1>
 
                 <ul class="keks">
-                    <li>4 октября</li>
-                    <li>Киев</li>
-                    <li>Выставочный центр АККО Интернешнл</li>
+                    <li>3 октября</li>
+                    <li>Киев, Выставочный центр</li>
+                    <li>АККО Интернешнл</li>
                 </ul>
 
-                <button type="button" class="btn btn-reg" title="РЕГИСТРАЦИЯ">РЕГИСТРАЦИЯ</button>
+                <button type="button" class="btn btn-reg link-anchor" data-anchor-scroll="#registration" title="РЕГИСТРАЦИЯ">РЕГИСТРАЦИЯ</button>
             </div>
 
             <div class="col-12 col-lg-6 d-none d-md-block">
-                <img src="/outer/images/hd-icon-3.png"  alt="Expo" class="shmeks">
+                <img src="/outer/images/hd-icon-3.png" alt="Expo" class="shmeks">
             </div>
         </div>
     </div>
 </header>
 
-<section class="about text-center">
+<section id="about" class="about text-center">
     <div class="container">
-        <h2 class="h2">О МЕРОПРИЯТИИ</h2>
+        <h2 class="h2">О ВЫСТАВКЕ</h2>
 
-        <p class="large">MUK EXPO ежегодно собирает свыше 1 500 украинских и зарубежных ИТ-профессионалов. Свои решения
+        <p class="large">MUK EXPO ежегодно собирает свыше 1500 украинских и зарубежных ИТ-профессионалов. Свои решения
             представляют более 40 компаний-участниц — лидеров рынка информационных технологий.</p>
 
         <div class="row">
@@ -128,7 +129,7 @@
     </div>
 </section>
 
-<section class="registration">
+<section id="registration" class="registration">
     <div class="top-shadow"></div>
     <div class="bottom-shadow"></div>
 
@@ -212,12 +213,25 @@
                             <label for="check3">Конечный пользователь (корпоративный заказчик/оператор связи/малый и
                                 средний бизнес)</label>
                         </div>
+                        <br>
+                        <div class="category-checkbox">
+                            <input id="check4" type="radio" name="radio" value="muk" class="radio">
+                            <label for="check4">Сотрудник МУК</label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="category-checkbox">
+                            <input id="check5" type="radio" name="radio2" value="soglasie" class="radio" required>
+                            <label for="check5">Я выражаю согласие на обработку введенных персональных данных и
+                                использование их на сайте и в приложении мероприятия.</label>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-lg-12 text-center">
-                    <button title="РЕГИСТРАЦИЯ" name="btn_submit" class="btn btn-form-submit" type="submit">
-                        РЕГИСТРАЦИЯ
+                    <button title="ЗАРЕГИСТРИРОВАТЬСЯ" name="btn_submit" class="btn btn-form-submit" type="submit">
+                        ЗАРЕГИСТРИРОВАТЬСЯ
                     </button>
                 </div>
             </div>
@@ -225,7 +239,7 @@
     </div>
 </section>
 
-<section class="schedule">
+<section id="schedule" class="schedule">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-5 offset-lg-1">
@@ -254,7 +268,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
 
@@ -265,7 +280,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
 
@@ -276,7 +292,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
                     </div>
@@ -288,7 +305,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
 
@@ -299,7 +317,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
 
@@ -310,7 +329,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
                     </div>
@@ -322,7 +342,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
 
@@ -333,7 +354,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
 
@@ -344,7 +366,8 @@
                                 <h3 class="h3">Игорь Сукайло</h3>
 
                                 <p class="large">Product Sales Specialist / CISCO</p>
-                                <p class="large last">Новый подход к организации видеоконференций. Связь без компромисов</p>
+                                <p class="large last">Новый подход к организации видеоконференций. Связь без
+                                    компромисов</p>
                             </div>
                         </div>
                     </div>
@@ -354,7 +377,7 @@
     </div>
 </section>
 
-<section class="expo text-center">
+<section id="expo" class="expo text-center">
     <div class="overlay"></div>
     <div class="container">
         <h2 class="h2">ЭКСПОЗИЦИЯ</h2>
@@ -374,14 +397,14 @@
         <h2 class="h2">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
 
         <div class="accordion">
-            <div class="accordion-item active">
+            <div class="accordion-item">
                 <div class="accordion-header">
                     <div class="icon"></div>
 
                     <h4 class="h4">Дата проведения</h4>
                 </div>
                 <div class="accordion-body">
-                    <p>28 сентября 2017 года. Выставка работает с 9:00 до 18:00</p>
+                    <p>02 октября 2019 года. Выставка работает с 9:00 до 18:00</p>
                 </div>
             </div>
 
@@ -418,13 +441,13 @@
             </div>
         </div>
 
-        <button class="btn btn-modal font-weight-bold"
-                title="ЗАДАТЬ ВОПРОС" type="button">ЗАДАТЬ ВОПРОС
-        </button>
+        <!--<button class="btn btn-modal font-weight-bold"-->
+                <!--title="ЗАДАТЬ ВОПРОС" type="button">ЗАДАТЬ ВОПРОС-->
+        <!--</button>-->
     </div>
 </section>
 
-<section class="partners text-center">
+<section id="partners" class="partners text-center">
     <div class="container">
         <h2 class="h2">НАШИ ПАРТНЕРЫ</h2>
 
@@ -461,7 +484,7 @@
     </div>
 </section>
 
-<div class="map"></div>
+<div id="map" class="map"></div>
 
 <footer class="footer">
     <div class="container">
@@ -484,13 +507,13 @@
             <div class="col-12 col-lg-9 p-lg-0">
                 <nav>
                     <ul>
-                        <li><a href="#" title="О ВЫСТАВКЕ">О ВЫСТАВКЕ</a></li>
-                        <li><a href="#" title="РЕГИСТРАЦИЯ">РЕГИСТРАЦИЯ</a></li>
-                        <li><a href="#" title="ДОКЛАДЫ">ДОКЛАДЫ</a></li>
-                        <li><a href="#" title="ДЕМОНСТРАЦИИ">ДЕМОНСТРАЦИИ</a></li>
-                        <li><a href="#" title="ЭКСПОЗИЦИЯ">ЭКСПОЗИЦИЯ</a></li>
-                        <li><a href="#" title="ПАРТНЕРЫ">ПАРТНЕРЫ</a></li>
-                        <li><a href="#" title="МЕСТО ПРОВЕДЕНИЯ">МЕСТО ПРОВЕДЕНИЯ</a></li>
+                        <li><a class="link-anchor" href="#" data-anchor-scroll="#about" title="О ВЫСТАВКЕ">О ВЫСТАВКЕ</a></li>
+                        <li><a class="link-anchor" href="#" data-anchor-scroll="#registration" title="РЕГИСТРАЦИЯ">РЕГИСТРАЦИЯ</a></li>
+                        <li><a class="link-anchor" href="#" data-anchor-scroll="#schedule" title="ДОКЛАДЫ/ДЕМОНСТРАЦИИ">ДОКЛАДЫ/ДЕМОНСТРАЦИИ</a></li>
+                        <li><a class="link-anchor" href="#" data-anchor-scroll="#expo" title="ЭКСПОЗИЦИЯ">ЭКСПОЗИЦИЯ</a></li>
+                        <li><a class="link-anchor" href="#" data-anchor-scroll="#partners" title="ПАРТНЕРЫ">ПАРТНЕРЫ</a></li>
+                        <li><a class="link-anchor" href="#" data-anchor-scroll="#map" title="МЕСТО ПРОВЕДЕНИЯ">МЕСТО ПРОВЕДЕНИЯ</a></li>
+                        <li><a class="link-anchor" href="/muk_security_hub/" title="MUK SECURITY HUB">MUK SECURITY HUB</a></li>
                     </ul>
                 </nav>
             </div>
