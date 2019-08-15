@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Expo 2019</title>
+
 </head>
 <body>
 <header class="header">
@@ -61,12 +62,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/muk_security_hub/" title="MUK SECURITY HUB">MUK SECURITY HUB</a>
                     </li>
-                    <li class="nav-item lang-wrap">
+                    <li id="langWrapper"
+                        class="nav-item lang-wrap">
                         <span>RU</span>
-                        <ul class="lang-item">
-                            <li class="lang">RU</li>
-                            <li class="lang">UA</li>
-                        </ul>
+
+                        <div class="item-wrap">
+                            <ul class="lang-item">
+                                <li class="lang" data-lang="ru">RU</li>
+                                <li class="lang" data-lang="ua">UA</li>
+                                <li class="lang" data-lang="en">EN</li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
